@@ -12,12 +12,13 @@ body {
 main {
  width: 940px;
  margin: auto;
+ display: flex;
 }
 /* header, section, footer {
  background-color: antiquewhite;
  border: 5px aqua solid;
 } */
-
+/* 页首部分 */
 header h1 {
  line-height: 132px;
  width: 940px;
@@ -27,30 +28,50 @@ header h1 {
 
 header nav {
  background-color: #2b2b2b;
+ height: 44px;
 }
 
 header ul {
  width: 940px;
  margin: auto;
+ color: #858A75;
+ list-style: none;
 }
 
 header li {
- display: inline;
+ float: left;
+ font-size: 14px;
  line-height: 44px;
- padding: 30px 60px;
+ /* padding: 30px 60px; */
 }
 
-header a { /* 设置header下所有a标签的css */
- color: gray;
- text-decoration: none;
+#li1{
+ margin-left: 55px;
+}
+#li2{
+ margin-left: 128px;
+}
+#li3{
+ margin-left: 114.4px;
+}
+#li4{
+ margin-left: 110.5px;
+}
+#li5{
+ margin-left: 99.5px;
+}
+/*对图片和文字的距离进行调整*/
+ul img{
+ /*相对定位，对于文字定位，适合微调*/
+ position: relative;
+ top: 7px;
+ right: 3mm;
 }
 
-header a:hover { /* 设置a标签悬停属性*/
- text-decoration: underline;
- cursor: pointer;
-}
-
+/* 广告标语区 */
 .slogan {
+ width: 940px;
+ margin: auto;
  background-color: antiquewhite;
  /* width: 940px; */
  height: 286px;
@@ -77,26 +98,17 @@ header a:hover { /* 设置a标签悬停属性*/
  font-size: 13px;
 }
 
+/* 正文部分 */
 .main_part {
  width: 641px;
  height: 1704px;
  border-right: 0.5px solid #CCCCCC;
 }
 
+/* 文章部分 */
 .post {
- height: 748px;
-}
-
-.post::after {
- content: "";
- display: block;
- border-bottom: 1px solid #DEDEDE;
- width: 617px;
- position: absolute;
- /* 改变线的位置 */
- bottom: -382px;
- /* 改变线的右边长度 */
- right: 804px;
+ height: 865px;
+ position: relative;
 }
 
 .post_header h1 {
@@ -167,8 +179,177 @@ header a:hover { /* 设置a标签悬停属性*/
  height: 24px;
 }
 
+
+/* 评论区 */
+.comments {
+ margin-top: 17px;
+ padding-bottom: 18px;
+ position: relative;
+}
+
+.comments h2 {
+ font-size: 19px;
+}
+
+.comments section {
+ display: flex;
+ margin-top: 37px;
+ margin-left: 22px;
+ margin-bottom: 45px;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.comments a {
+ color: black;
+}
+
+.comments_meta p {
+ margin-top: 6px;
+ font-size: 13px;
+}
+
+.comments_content {
+ width: 350px;
+ margin-right: 27px;
+ margin-top: -3px;
+}
+
+.comments_content p {
+ line-height: 22px;
+ font-size: 13px;
+ word-spacing: 0.8px;
+}
+
+.post::after {
+ content: "";
+ display: block;
+ border-bottom: 1px solid #DEDEDE;
+ width: 617px; /* 调整宽度以适应各自article的宽度 */
+ position: absolute;
+ bottom: 0; /* 将线条放在每个区块内容的底部 */
+ left: 0; /* 线条从左侧开始 */
+}
+
+.comments::after {
+ content: "";
+ display: block;
+ border-bottom: 1px solid #CCCCCC;
+ width: 617px; /* 调整宽度以适应各自article的宽度 */
+ position: absolute;
+ bottom: 0; /* 将线条放在每个区块内容的底部 */
+ left: 0; /* 线条从左侧开始 */
+}
+
+/* 点评 */
+.toComment {
+ margin-top: 16px;
+}
+
+.toComment h2 {
+ font-size: 20px;
+}
+
+.toComment section {
+ display: flex;
+ justify-content: flex-end;
+ flex-direction: row;
+}
+
+.section_top {
+ margin-top: 11px;
+}
+
+.section_common {
+ margin-top: 22px;
+}
+
+/* .toComment label {
+ margin-right: 20px;
+ text-align: center;
+ letter-spacing: -0.5px;
+} */
+#label1 {
+ display: block;
+ margin-top: 4px;
+ margin-right: 20px;
+ text-align: center;
+ letter-spacing: -0.5px;
+ 
+}
+#label2 {
+ display: block;
+ margin-top: 4px;
+ margin-right: 20px;
+ text-align: center;
+ letter-spacing: -0.28px;
+}
+#label3 {
+ display: block;
+ margin-top: 4px;
+ margin-right: 22px;
+ text-align: center;
+ letter-spacing: -0.089mm;
+}
+#label4 {
+ display: block;
+ margin-top: 4px;
+ margin-right: 20px;
+ text-align: center;
+ letter-spacing: -0.49px;
+}
+
+.toComment input{
+ width: 299px;
+ height: 20px;
+ margin-right: 158px;
+ border: 0.5px solid #A9A9A9;
+}
+
+.toComment textarea {
+ width: 297px;
+ height: 100px;
+ margin-right: 160px;
+ border: 0.5px solid #A9A9A9;
+}
+
+.toComment button {
+ border: 2px solid #BCBCBC;
+ background: linear-gradient(to top, #e0e0e1, #f2f2fa);
+ display: block;
+ margin-top: 26px;
+ margin-left: 184px; 
+ letter-spacing: -0.18px;
+ padding: 1px 1.65px 0px 1.8px;
+}
+/* 侧边栏 */
 aside {
- width: 278px;
  height: 1704px;
- float: left;
+ background: linear-gradient(to right, #E3E3E3, transparent);
+}
+
+/* blank */
+aside div {
+ margin-top: 22px;
+}
+
+aside section {
+ width: 278px;
+ height: 200px;
+ margin-left: 20px;
+ border-radius: 10px;
+ background: linear-gradient(177deg, #DCDCDC, transparent);
+}
+
+aside h2 {
+ font-size: 19px;
+ padding-top: 22px;
+ margin-left: 23px
+}
+
+aside p {
+ font-size: 13px;
+ margin-top: 10px;
+ margin-left: 45px;
+ line-height: 23px;
 }

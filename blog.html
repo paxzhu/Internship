@@ -10,24 +10,24 @@
         <h1> The Flower Blog </h1>
         <nav>
         <ul>
-            <li><a href="#"> Blog </a></li>
-            <li><a href="#"> About </a></li>
-            <li><a href="#"> Archive </a></li>
-            <li><a href="#"> Contact </a></li>
-            <li><a href="#"> Sybscnbe via RSS </a></li>
+            <li id="li1"> Blog </li>
+            <li id="li2"> About </li>
+            <li id="li3"> Archives </li>
+            <li id="li4"> Contact </li>
+            <li id="li5"><img src="images/wifi.png" alt="">Sybscnbe via RSS</li>
         </ul>
         </nav>
+        <!-- 广告语  -->
+        <article class="slogan">
+            <p class="slogan_title"> Do you love flowers as <br> 
+                much as we do? </p>
+            <p class="slogan_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                sed do eiusmod tempor incididunt ut labore et dolore<br>
+                magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
+                exercitation ullamco laboris nisi ut.</p>
+        </article>
     </header>
     <main>
-    <!-- 广告语  -->
-    <article class="slogan">
-        <p class="slogan_title"> Do you love flowers as <br> 
-            much as we do? </p>
-        <p class="slogan_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-            sed do eiusmod tempor incididunt ut labore et dolore<br>
-            magna aliqua. Ut enim ad minim veniam, quis nostrud<br>
-            exercitation ullamco laboris nisi ut.</p>
-    </article>
     <!-- 主要文章部分 -->
     <section class="main_part">
         <article class="post">
@@ -99,14 +99,14 @@
             </article>
         </article>
     <!-- 文章评论部分 -->
-        <article>
+        <article class="comments">
             <h2> Comments </h2>
             <section>
-                <div>
-                    <p>George Washington
-                    </br>on June 29th 2009 at 23:35</p>
+                <div class="comments_meta">
+                    <b><a href="#">George Washington</a></b>
+                    <p>on June 29th 2009 at 23:35</p>
                 </div>
-                <div>
+                <div class="comments_content">
                     <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit.<br>
                         on June 29th 2009 at 23:35 sed do eiusmod tempor<br>
                         magna aliqua. Ut enim ad minim veniam. quis nostrud<br>
@@ -114,11 +114,11 @@
                 </div>
             </section>
             <section>
-                <div>
-                    <p>George Washington
-                    </br>on June 29th 2009 at 23:35</p>
+                <div class="comments_meta">
+                    <b><a href="#">George Washington</a></b>
+                    <p>on June 29th 2009 at 23:35</p>
                 </div>
-                <div>
+                <div class="comments_content">
                     <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit.<br>
                         on June 29th 2009 at 23:35 sed do eiusmod tempor<br>
                         magna aliqua. Ut enim ad minim veniam. quis nostrud<br>
@@ -126,11 +126,11 @@
                 </div>
             </section>
             <section>
-                <div>
-                    <p>George Washington
-                    </br>on June 29th 2009 at 23:35</p>
+                <div class="comments_meta">
+                    <b><a href="#">George Washington</a></b>
+                    <p>on June 29th 2009 at 23:35</p>
                 </div>
-                <div>
+                <div class="comments_content">
                     <p>Lorem ipsum dolor sit amet. consectetur adipisicing elit.<br>
                         on June 29th 2009 at 23:35 sed do eiusmod tempor<br>
                         magna aliqua. Ut enim ad minim veniam. quis nostrud<br>
@@ -138,26 +138,65 @@
                 </div>
             </section>
         </article>
+        <article class="toComment">
+            <h2>Post a comment</h2>
+            <section class="section_top">
+                <div>
+                    <label for="name" id="label1"><b>Name</b></label>
+                </div>
+                <div>
+                    <input type="text" id="input1" name="name" required>
+                </div>
+            </section>
+            <section class="section_common">
+                <div>
+                    <label for="email" id="label2"><b>E-mail</b></label>
+                </div>
+                <div>
+                    <input type="email" id="input2" name="email" required>
+                </div>
+            </section>
+            <section class="section_common">
+                <div>
+                    <label for="Website" id="label3"><b>Websit<span style="margin-right: -2px;">e</span></b></label>
+                </div>
+                <div>
+                    <input type="text" id="input3" name="name" required>
+                </div>
+            </section>
+            <section class="section_common">
+                <div>
+                    <label for="Comment" id="label4"><b><span style="margin-right: 0.26px;"><span style="margin-right: 0.25px;">Co</span>mm</span><span style="margin-right: 0.1px;"><span style="margin-right: 0.25px;">e</span>n</span>t</b></label>
+                </div>
+                <div>
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+            </section>          
+            <!-- <input id="button" type="button" value="Post comment"> -->
+            <button name="button">Post comment</button>
+  
+        </article>
     </section>
     
     <!-- 侧边栏——评论及存档记录 -->
     <aside>
+        <div></div>
         <section>
             <h2> Categories </h2>
-            <p>Lorem ipsum dolor
-                Sit amet consectetur
-                Adipisicing elit sed
-                Do eiusmod tempor
+            <p>Lorem ipsum dolor<br>
+                Sit amet consectetur<br>
+                Adipisicing elit sed<br>
+                Do eiusmod tempor<br>
                 Incididunt ut labore</p>
         </section>
         <section>
             <h2> Archives </h2>
-            <p>December 2008
-                January 2009
-                February 2009
-                March 2009
-                April 2009
-                May 2009
+            <p>December 2008<br>
+                January 2009<br>
+                February 2009<br>
+                March 2009<br>
+                April 2009<br>
+                May 2009<br>
                 June 2009</p>
         </section>
         </aside>
