@@ -107,7 +107,7 @@ ul img{
 
 /* 文章部分 */
 .post {
- height: 865px;
+ height: 849px;
  position: relative;
 }
 
@@ -182,9 +182,10 @@ ul img{
 
 /* 评论区 */
 .comments {
- margin-top: 17px;
- padding-bottom: 18px;
- position: relative;
+ width: 641px;
+  height: 451px;
+  margin-top: 33px;
+  position: relative;
 }
 
 .comments h2 {
@@ -243,7 +244,9 @@ ul img{
 
 /* 点评 */
 .toComment {
- margin-top: 16px;
+ width: 641px;
+ height: 340px;
+ margin-top: 32px;
 }
 
 .toComment h2 {
@@ -352,4 +355,86 @@ aside p {
  margin-top: 10px;
  margin-left: 45px;
  line-height: 23px;
+}
+
+/* 页脚 */
+footer {
+ background-color: #222222;
+ height: 352px;
+}
+
+footer article {
+ width: 940px;
+ padding-top: 55px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: flex-start;
+}
+
+footer h2 {
+ font-size: 18px;
+ color: #FFFFFF;
+ padding-top: 1px;
+ margin-bottom: 12px;
+}
+
+.about {
+ font-size: 13px;
+ color: #6e6e6e;
+ line-height: 21.8px;
+ word-spacing: 1px;
+}
+
+#footer_blogroll {
+ margin-left: 20px;
+}
+
+.blogroll {
+ font-size: 13px;
+ line-height: 21.5px;
+ color: #858A80;
+ margin-left: 39px;
+}
+
+#footer_popular {
+ margin-left: 184px;
+}
+
+.popular {
+ font-size: 13px;
+ line-height: 21.5px;
+ color: #858A80;
+ margin-left: 39px;
+}
+
+footer ul {
+ list-style:  none;
+}
+
+footer li {
+ position: relative;
+}
+
+footer li::before {
+ content: "■";
+ position: absolute;
+ left: -16.3px;
+ top: 0.5px;
+ font-size: 9px;
+ color: #525252;
+}
+
+footer span {
+ position: relative;
+ display: inline-block;
+ color: #858A80;
+}
+
+footer span::after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ left: 0;
+ bottom: 2.5px;
+ border-bottom: 1px solid #717171;
 }
