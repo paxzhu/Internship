@@ -11,10 +11,21 @@
         <nav>
         <ul>
             <li id="li1"> Blog </li>
-            <li id="li2"> About </li>
+            <li id="li2">
+                <span style="letter-spacing:-0.1px; margin-right:-3.5px"> Abo </span>
+                <span>ut</span>
+            </li>
             <li id="li3"> Archives </li>
-            <li id="li4"> Contact </li>
-            <li id="li5"><img src="images/wifi.png" alt="">Sybscnbe via RSS</li>
+            <li id="li4"> 
+                <span style="margin-left: 0.2px">
+                <span style="margin-right: -4px">Co<span style="margin-left: 0.1px">nt</span>
+                </span>act</span> 
+            </li>
+            <li id="li5"><img src="images/wifi.png" alt=""><span style="margin-left: -3.5px; letter-spacing:-0.019px">
+                <span style="margin-right: -3.6px;">Sybscn</span>
+                be via RS
+<span style="margin-right:-4px"></span>S
+            </span></li>
         </ul>
         </nav>
         <!-- 广告语  -->
@@ -103,7 +114,10 @@
             <h2> Comments </h2>
             <section>
                 <div class="comments_meta">
-                    <b><a href="#">George Washington</a></b>
+                    <b>
+                        <a href="#">George Washing</a>
+                        <span>ton</span>
+                    </b>
                     <p>on June 29th 2009 at 23:35</p>
                 </div>
                 <div class="comments_content">
@@ -115,7 +129,10 @@
             </section>
             <section>
                 <div class="comments_meta">
-                    <b><a href="#">George Washington</a></b>
+                    <b>
+                        <a href="#">George Washing</a>
+                        <span>ton</span>
+                    </b>
                     <p>on June 29th 2009 at 23:35</p>
                 </div>
                 <div class="comments_content">
@@ -127,7 +144,10 @@
             </section>
             <section>
                 <div class="comments_meta">
-                    <b><a href="#">George Washington</a></b>
+                    <b>
+                        <a href="#">George Washing</a>
+                        <span>ton</span>
+                    </b>
                     <p>on June 29th 2009 at 23:35</p>
                 </div>
                 <div class="comments_content">
@@ -150,7 +170,9 @@
             </section>
             <section class="section_common">
                 <div>
-                    <label for="email" id="label2"><b>E-mail</b></label>
+                    <label for="email" id="label2">
+                        <b>E-m<span style="margin-right:-0.3px"></span>ail</b>
+                    </label>
                 </div>
                 <div>
                     <input type="email" id="input2" name="email" required>
@@ -158,7 +180,9 @@
             </section>
             <section class="section_common">
                 <div>
-                    <label for="Website" id="label3"><b>Websit<span style="margin-right: -2px;">e</span></b></label>
+                    <label for="Website" id="label3">
+                        <b>Websit<span style="margin-right: 0.3px;"></span>e</b>    
+                    </label>
                 </div>
                 <div>
                     <input type="text" id="input3" name="name" required>
@@ -166,15 +190,26 @@
             </section>
             <section class="section_common">
                 <div>
-                    <label for="Comment" id="label4"><b><span style="margin-right: 0.26px;"><span style="margin-right: 0.25px;">Co</span>mm</span><span style="margin-right: 0.1px;"><span style="margin-right: 0.25px;">e</span>n</span>t</b></label>
+                    
+                    <label for="Comment" id="label4">
+                        <!-- <b><span style="margin-right: 0.26px;"><span style="margin-right: 0.25px;">Co</span>mm</span><span style="margin-right: 0.1px;"><span style="margin-right: 0.25px;">e</span>n</span>t</b> -->
+                        <b>Co<span style="margin-right: 0.3px;"></span>mm<span style="margin-right: 0.3px;"></span>ent</b>
+                    </label>
                 </div>
                 <div>
                     <textarea name="" id="textarea" cols="30" rows="10"></textarea>
                 </div>
             </section>          
             <!-- <input id="button" type="button" value="Post comment"> -->
-            <button name="button">Post comment</button>
-  
+            <!-- <button name="button">Post comment</button> -->
+            <div class="custom_button">
+                <span style="padding-left:2px">
+                    P 
+                <span style="margin-left: -3.5px">
+                    ost
+                </span>com
+                <span style="margin-left:-3.5px">m</span>ent</span>
+            </div>
         </article>
     </section>
     
@@ -208,8 +243,8 @@
             <p  class="about"> Lorem ipsum dolor sit amet. consectetur adipisicing<br>
                 elit. sed do eiusmod tempor incididunt ut labore et<br>
                 dolore magna aliqua. Ut enim ad minim veniam.<br>
-                quis nostrud exercitation ullamco <span>laboris nisi ut</span><br>
-                <span >aliquip</span> ex ea commodo consequat. Duis aute irure<br>
+                quis nostrud exercitation ullamco <span id="line1">laboris nisi ut</span><br>
+                <span id="line2">aliquip</span> ex ea commodo consequat. Duis aute irure<br>
                  dolor in reprehenderit in voluptate velit esse cillum<br>
                  dolore eu fugiat nulla pariatur. Excepteur sint<br>
                  occaecat cupidatat non proident. sunt in culpa qui<br>
@@ -221,21 +256,31 @@
                 <li><span>NETTUTS+</span></li>
                 <li><span>FreelanceSwitch</span></li>
                 <li><span>In The Woods</span></li>
-                <li><span>Netsetter</span></li>
-                <li><span>PSDTUTS+</span></li>
+                <li class="point_adjustment"><span>Netsetter</span></li>
+                <li><span style="bottom: -1px">PSDTUTS+</span></li>
             </ul>
         </section>
         <section id="footer_popular">
             <h2> Popular </h2>
-            <ul class="popular">
-            <li><span>This is the title of a blog post</span></li>
-            <li><span>Lorem ipsum dolor sit amet </span></li>
-            <li><span>Duis aute irure dolor </span></li>
-            <li><span>Excepteur sint occaecat cupidatat</span></li>
-            <li><span>Reprehenderit in voluptate velit</span></li>
-            <li><span>Reprehenderit in voluptate velit</span></li>
-            <li><span>Officia deserunt mollit anim id est laborum</span></li>
-            <li><span>Lorem ipsum dolor sit amet</span></li>
+            <!-- <ul class="popular">
+            <li><span style="line-height: 15px;">This is the title of a blog post</span></li>
+            <li><span class="popular_common_h">Lorem ipsum dolor sit amet </span></li>
+            <li><span class="popular_common_h">Duis aute irure dolor </span></li>
+            <li><span class="popular_common_h">Excepteur sint occaecat cupidatat</span></li>
+            <li><span class="popular_common_h">Reprehenderit in voluptate velit</span></li>
+            <li><span class="popular_common_h">Reprehenderit in voluptate velit</span></li>
+            <li><span class="popular_common_h">Officia deserunt mollit anim id est laborum</span></li>
+            <li><span class="popular_common_h">Lorem ipsum dolor sit amet</span></li>
+            </ul> -->
+            <ul id="footer3_p">
+                <li class="point_adjustment1"><span class="underline4" id="txtadjustment">Th<span style="margin-right: -0.1px;">i</span>s is the title of a bl<span style="margin-right: -0.15px;">o</span>g post</span></li>
+                <li class="point_adjustment1"><span class="underline4" id="txtadjustment">Lorem i<span style="margin-right: -0.1px;">p</span>sum dolor sit amet</span></li>
+                <li class="point_adjustment2"><span class="underline4" id="txtadjustment">Duis a<span style="margin-right: -0.1px;">u</span>te irure dolor</span></li>
+                <li class="point_adjustment2"><span class="underline4" id="txtadjustment">Excepteur s<span style="margin-right: -0.1px;">i</span>nt occaecat cu<span style="margin-right: -0.1px;">p</span>id<span style="margin-right: -0.25px;"><span style="margin-right: 0.1px;">a</span>t</span>at</span></li>
+                <li class="point_adjustment2"><span class="underline4" id="txtadjustment">Reprehen<span style="margin-right: -0.25px;">d</span>erit in volupt<span style="margin-right: 0.25px;">a</span>te velit</span></li>
+                <li class="point_adjustment2"><span class="underline4" id="txtadjustment1">Reprehen<span style="margin-right: -0.25px;">d</span>erit in vol<span style="margin-right: 0.1px;">u</span>ptate <span style="margin-right: 0.2px;"> </span>velit</span></li>
+                <li class="point_adjustment2"><span class="underline4" id="txtadjustment1">Officia deserunt mollit anim <span style="margin-right: -0.25px;">i</span>d <span style="margin-right: 0.2px;"> </span>est <span style="margin-right: -0.2px;"> </span>laborum</span></li>
+                <li class="point_adjustment2"><span class="underline4" id="txtadjustment1">Lorem i<span style="margin-right: -0.1px;">p</span>sum dolor sit amet</span></li>
             </ul>
         </section>
         </article>
